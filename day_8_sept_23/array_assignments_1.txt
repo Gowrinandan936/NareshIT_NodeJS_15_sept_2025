@@ -6,7 +6,7 @@ let employees = [
 	{ eId: 105, name: 'deepak', sal: 8000, gender: 'male' }
   ];
 
-1. declare array of employees & sort them in ascending order (empId)
+1. declare array of employees & sort them in ascending order (empId).
 
 2. declare array of employees & sort them in ascending order by name.
 
