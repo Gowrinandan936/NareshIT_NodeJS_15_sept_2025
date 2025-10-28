@@ -3,6 +3,7 @@ const fs = require('fs');
 const dirName = 'temp';
 const fileName = `${dirName}/demo.txt`;
 const newFileName = `${dirName}/demo_2.txt`;
+
 // create a directory if its not present
 if (!fs.existsSync(dirName)) {
     fs.mkdirSync(dirName);

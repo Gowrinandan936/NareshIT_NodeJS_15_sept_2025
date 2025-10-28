@@ -57,8 +57,8 @@ const server = http.createServer((req, res) => {
         const index = employees.findIndex(emp => emp.eId === empId);
         if(index !== -1){
             employees.splice(index, 1);
-            res.writeHead(204);
-            res.end();
+            res.writeHead(204,{'Content-Type' : 'application/json'});
+            res.end(JSON.stringify({message : "Employee deleted"  }));
         } else {
             res.writeHead(404, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ message: "Employee not found" }));
